@@ -339,7 +339,7 @@ a{
 
 /* COMPANY SERVICES */
 #services{
-    height: 2900px;
+    height: 3100px;
     margin-left:5%;
     width:90%;
     position: relative;
@@ -397,6 +397,6 @@ a{
 /* FOOTER */
 #footer{
     margin-top:10px;
-    background-color: maroon;
+/*     background-color: maroon; */
     height:20px;
 }
