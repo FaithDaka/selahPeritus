@@ -1,0 +1,402 @@
+body{
+    background-color: beige;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+
+hr{
+    width:97%;
+}
+
+i{
+    padding: 1.5px;
+}
+
+p{
+    padding: none;
+    margin:auto;
+    border: none;
+}
+a{
+    text-decoration-line: none;
+    font-size: 16px;
+    color:black;
+    padding: none;
+}
+
+/* LINE AS SECTION TAG */
+.line{
+    width: 25%;
+    position: relative;
+    margin-left: 19%;
+    height: 20px;
+    background-color: teal;
+}
+
+.header{
+    margin-top:2px;
+    position: relative;
+    min-width: 300px;
+}
+
+/* Social Media Icons */
+.icon-bar{
+    float:left;
+    overflow: hidden;
+    margin-left: 85%;
+}
+
+#icons{
+    padding: 5px;
+    font-size: 35px;
+    width: 180px;
+}
+
+.icon-bar a{
+    float: left;
+    color: blue;
+    text-align: center;
+    width: 23%;
+    padding:5px, 0;
+    transition: all 0.3s ease; 
+}
+
+.icon-bar a:hover{
+    background-color: #aaa;
+    cursor: pointer;
+}
+/* Box sizing the heading and buttons */
+.flex-container{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: stretch;
+    padding: 0;
+}
+
+/* SP heading and motto */
+.logo{
+    color: black;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+#logo{
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 0.1em;
+    font-weight: 600px;
+    height:80px;
+    width:38%;
+}
+
+#motto{
+    padding-bottom: 0;
+    padding-top:5px;
+    margin-left:300px;
+    text-transform: capitalize;
+    letter-spacing: none;
+    text-decoration-line: underline;
+    text-decoration-color: white;
+    font-size: 18px;
+}
+
+/* TOGGLE DROPDOWN */
+.drop-m{
+    float: right;
+    margin-left: 45%;
+}
+
+.drop-menu{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    cursor:pointer;
+    background-color: maroon;
+}
+
+#info-content{
+    display: block;
+    position: relative;
+    z-index: 9;
+    margin: 0;
+    list-style-type: none;
+}
+
+.dropdown-menu li{
+    opacity: 1;
+    visibility: visible;
+    font-size: 14px;
+    color: black;
+    padding: 10px 8px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+}
+
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 80px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 3;
+}
+
+/* .dropdown-menu li:hover{
+    background-color: #ddd;
+} */
+
+.drop-menu:hover, .drop-menu:focus{
+    background-color: teal;
+}
+/* DROP-DOWN MENU */
+
+/* dropdown button */
+.dropbtn{
+    background-color: maroon;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    height:40px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.dropbtn:hover, .dropbtn:focus{
+    background-color: teal;
+}
+
+.dropdown{
+    position: relative;
+    float: right;
+    margin-left: 2%;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a{
+    color: black;
+    padding: 12px 13px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover{
+    background-color: #ddd;
+}
+
+.show{
+    display: block;
+}
+
+#color{
+    background-color: teal;
+    height:20px;
+    width:50%;
+    margin-left:25%;
+    margin-top:0;
+}
+
+/* SLIDESHOW */
+*{
+    box-sizing: border-box;
+}
+
+.slideShow{
+    max-width: 1000px;
+    position: relative;
+}
+
+.mySlides{
+    width:100%;
+    margin-left:30%;
+    margin-top:20px;
+    padding-top: 5px;
+    height: 600px;
+    /* box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2); */
+}
+
+.text{
+    color: white;
+    font-style: italic;
+    text-transform: capitalize;
+    font-weight: bolder;
+    font-size:35px;
+    padding: 8px 10px;
+    position: absolute;
+    width: 40%;
+    bottom: 10px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    font-family:'Times New Roman', Times, serif;
+}
+
+#p1{
+    margin-left: 60%;
+    bottom: 40%;
+}
+
+#p2{
+    margin-left:3%;
+    bottom: 38%;
+}
+
+#p3{
+    margin-left: 5%;
+    bottom: 45%;
+}
+
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@-webkit-keyframes fade{
+    from{
+        opacity: .4
+    }
+    to{
+        opacity: 1
+    }
+}
+
+@keyframes fade{
+    from{opacity: .4}
+    to{opacity:1}
+}
+
+/* COMPANY STATEMENT */
+
+#start-text{
+    border: none;
+    box-shadow: none;
+    margin-left: 8%;
+    width: auto;
+    margin-top: 1.8%;
+}
+
+#start-text p{
+    margin-top:5%;
+    font-size: 25px;
+    letter-spacing: 0.1em;
+}
+
+#start-text li{
+    font-size: 16.5px;
+    letter-spacing: 0.1em;
+}
+
+/* COMPANY VISION */
+.vision{
+    border:0.3px solid #aaa;
+    width: 80%;
+    margin-left:5%;
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+
+.vision h1{
+    font-size:25px;
+    text-transform: capitalize;
+    position: relative;
+    text-align: left;
+    margin-left:2%;
+    letter-spacing: 0.1em;
+    text-decoration-line: underline;
+    text-decoration-color: black;
+}
+
+.vision ul{
+    font-size: 18px;
+    line-height: 1em;
+}
+
+#line1{
+    margin-left:5%;
+    margin-top:90px;
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* COMPANY SERVICES */
+#services{
+    height: 2900px;
+    margin-left:5%;
+    width:90%;
+    position: relative;
+}
+
+#services h3{
+    font-size: 19px;
+    text-decoration-line: underline;
+    letter-spacing: 0.1em;
+    margin-left:2%;
+    margin-top: 3%;
+}
+
+#services h4{
+    font-size: 16.5px;
+    margin-left:3.5%;
+}
+
+#services p{
+    font-size: 18px;
+    margin-left:3%;
+    line-height:1.5em;
+    
+}
+
+#services li{
+    font-size: 17.5px;
+    margin-left: 3.5%;
+    line-height: 1.6em;
+}
+
+#services li, p{
+    margin-right:5%;
+}
+
+#line2{
+    margin-left:5%;
+    margin-top:80px;
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2); 
+}
+
+/* COMPANY FOOTER */
+.foot{
+    width:100%;
+    background-color: teal;
+    height:380px;
+    margin-top:150px;
+    position: relative;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* FOOTER */
+#footer{
+    margin-top:10px;
+    background-color: maroon;
+    height:20px;
+}
